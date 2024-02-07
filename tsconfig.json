@@ -1,27 +1,19 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "esnext",
-    "target": "esnext",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017.string",
-      "es2017.object",
-      "es2019.array",
-      "ES2021.String"
-    ],
-    "jsx": "react-jsx",
     "allowJs": true,
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "outDir": "build",
     "paths": {
-      "@src/*": ["./src/*"]
-    }
+      "@src/*": ["./src/*"],
+    },
   },
-  "include": ["globals.d.ts", "src/**/*"]
+  "include": ["**/*.ts", "**/*.tsx"],
 }
