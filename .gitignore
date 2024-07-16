@@ -1,6 +1,12 @@
 .DS_Store
 dist/
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
+node_modules/
+
+# yarn pnp
 .pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
